@@ -1,11 +1,15 @@
 body{
     height: 100%;
-    width: auto;
+    width: 100%;
     background-color: coral
 }
 img{
-    border-radius: 10px;
-    border: 3px solid orange;
-    width:500px;
-    height: auto;
+    filter: drop-shadow(1px 1px 5px black);
+    border-radius:3px ;
 }
+img:hover{
+    border-radius: 15px;
+    transition: 0.2s;
+}
+
+

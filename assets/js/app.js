@@ -1,3 +1,4 @@
+//Extraer a los datos de la API con manejo de errores
 async function fetchingData(url) {
     try {
         const respuesta = await fetch(url)
@@ -12,6 +13,7 @@ async function fetchingData(url) {
     }
 }
 
+//Renderizar los datos en el HTML
 async function renderFox(data) {
     const imageFox = document.createElement("div")
     imageFox.innerHTML = `
@@ -21,6 +23,7 @@ async function renderFox(data) {
     document.body.appendChild(imageFox)
 }
 
+//Llamar a la extraccion de datos
 fetchingData("https://randomfox.ca/floof/")
 fetchingData("https://randomfox.ca/floof/")
 fetchingData("https://randomfox.ca/floof/")
